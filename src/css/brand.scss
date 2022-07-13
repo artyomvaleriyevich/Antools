@@ -1,0 +1,40 @@
+.brand{
+  &__content{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 55px 83px;
+    background: rgba(44, 53, 61, 0.2);
+    backdrop-filter: blur(50px);
+    border-radius: 25px;
+    position: relative;
+    &::before{
+      content: "";
+      position: absolute;
+      width: 159px;
+      height: 159px;
+      background: rgba(255, 72, 66, 0.4);
+      filter: blur(100px);
+      top: -79.5px;
+      left: -79.5px;
+    }
+  }
+  &__row{
+    width: 1224px;
+    display: flex;
+    justify-content: space-around;
+  }
+  &__title{
+    margin-bottom: 56px;
+    text-align: center;
+    font-family: 'Poppins',sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+}

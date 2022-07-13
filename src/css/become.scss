@@ -1,0 +1,43 @@
+.become__content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 240px;
+}
+.become__title, .become__subtitle{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.become__input-email{
+  color: white;
+  width: 549px;
+  height: 64px;
+  padding: 22px 0 22px 24px;
+  background: #283036;
+  border-radius: 15px;
+  border: none;
+  outline: none;
+
+}
+.become__input{
+  width: 549px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.become__input-btn{
+  position: absolute;
+  padding: 12px 36px;
+  color: white;
+  background: #FF6E30;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+
+
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}

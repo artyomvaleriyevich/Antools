@@ -1,0 +1,85 @@
+.newcomer{
+  margin-top: 220px;
+  &__content{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 200px;
+
+    column-gap: 24px;
+    row-gap: 50px;
+    margin-left: 220px;
+  }
+  &__card{
+    padding: 28px 21px;
+    background: transparent;
+    flex-wrap: wrap;
+    width: 288px;
+    overflow: hidden;
+      &-img{
+        width: 56px;
+        height: 56px;
+      }
+    &-info{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    &:hover{
+      transition: 2s;
+      background: rgba(40, 48, 54, 0.6);
+      backdrop-filter: blur(50px);
+      border-radius: 15px;
+      position: relative;
+      &::before{
+        content: "";
+        position: absolute;
+        width: 65px;
+        height: 62.79px;
+        background: rgba(255, 110, 48, 0.6);
+        filter: blur(50px);
+        top: -17px;
+        right: -9px;
+      }
+
+    }
+
+  }
+  &__title{
+    font-family: 'Poppins',sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: rgba(255, 255, 255, 0.78);
+  }
+  &__prise{
+    font-family: 'Poppins',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: rgba(255, 165, 55, 0.55);
+  }
+  &__icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-icon{
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+.newcomer__icons-icon{
+  display: flex;
+  column-gap: 50px;
+}
+.newcomer__card-titles{
+  display: flex;
+  flex-direction: column;
+}
